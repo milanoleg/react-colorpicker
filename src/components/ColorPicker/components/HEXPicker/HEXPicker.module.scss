@@ -1,0 +1,36 @@
+.hexContainer {
+  width: 170px;
+}
+
+.colorsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.colorListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  color: grey;
+
+  &:hover {
+    color: lightgray;
+    background-color: dodgerblue;
+  }
+}
+
+.colorLabel {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.colorPreview {
+  width: 16px;
+  height: 16px;
+}

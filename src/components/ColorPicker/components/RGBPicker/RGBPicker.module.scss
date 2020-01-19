@@ -1,0 +1,98 @@
+.rgbContainer {
+  width: 200px;
+  padding: 12px;
+}
+
+.popupControls {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.sliderControlContainer {
+  display: flex;
+  justify-content: stretch;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.controlTitle {
+  font-size: 14px;
+  color: grey;
+  padding-right: 5px;
+}
+
+.rgbControl {
+  outline: none;
+  border: 1px solid #a3a4a6;
+  text-transform: uppercase;
+  padding: 5px 10px;
+
+  &Cancel {
+    color: #a3a4a6;
+    background: #d0d1d3;
+  }
+
+  &Submit {
+    color: #fff;
+    background: #6ca459;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 92%;
+
+  &::-webkit-slider-runnable-track {
+    border: none;
+    border-radius: 2px;
+    height: 2px;
+  }
+
+  &::-webkit-slider-thumb {
+    background: #738598;
+    border-radius: 50%;
+    height: 11px;
+    margin-top: -4px;
+    width: 11px;
+    -webkit-appearance: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.redControl {
+  &::-webkit-slider-runnable-track {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 0, 0, 1) 100%
+    );
+  }
+}
+.greenControl {
+  &::-webkit-slider-runnable-track {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 255, 0, 1) 100%
+    );
+  }
+}
+.blueControl {
+  &::-webkit-slider-runnable-track {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 255, 1) 100%
+    );
+  }
+}

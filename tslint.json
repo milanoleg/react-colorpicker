@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "interface-name": false,
+    "import-name": [
+      true,
+      {
+        "react": "React",
+        "*.module.css": "styles"
+      }
+    ],
+    "quotemark": [true, "single", "jsx-double"],
+    "ordered-imports": false,
+    "no-empty-interface": true,
+    "no-reference": true,
+    "no-parameter-reassignment": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration"
+    ],
+    "unified-signatures": true,
+    "ban-comma-operator": true,
+    "curly": true,
+    "no-debugger": true,
+    "no-construct": true,
+    "class-name": true,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-pascal-case",
+      "ban-keywords"
+    ],
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": [true, 2],
+    "member-access": false,
+    "member-ordering": false,
+    "jsx-wrap-multiline": false,
+    "jsx-boolean-value": [true, "never"],
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+    "jsx-space-before-trailing-slash": true,
+    "jsx-no-lambda": false
+  }
+}
