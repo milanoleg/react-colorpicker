@@ -40,7 +40,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "prettier": "^1.19.1",
-    "stylelint": "^13.0.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-scss": "^3.13.0",
     "tslint": "^5.20.1",
